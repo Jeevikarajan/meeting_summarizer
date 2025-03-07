@@ -1,4 +1,4 @@
-# meeting_summarizer
+# Meeting_summarizer
 
 Overview
 The Meeting Summarizer is a Python-based tool that:
