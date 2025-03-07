@@ -1,30 +1,21 @@
----
+MIT License
 
-### Example main.py File
-Here’s a simple Python script to generate summaries:
-```python
-# meeting_summary.py
-import re
+Copyright (c) 2023 Your Name
 
-def summarize_transcript(input_file, output_file):
-    with open(input_file, 'r') as file:
-        transcript = file.read()
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-    # Extract key points and action items (basic example)
-    key_points = re.findall(r'\b\w+:.*', transcript)
-    action_items = re.findall(r'\b\w+ will .*', transcript)
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-    # Generate summary
-    summary = f"Summary of Meeting:\n"
-    summary += f"- Key Points:\n  * " + "\n  * ".join(key_points) + "\n"
-    summary += f"- Action Items:\n  * " + "\n  * ".join(action_items) + "\n"
-
-    # Save summary to output file
-    with open(output_file, 'w') as file:
-        file.write(summary)
-
-if _name_ == "_main_":
-    input_file = "meeting_transcript.txt"
-    output_file = "meeting_summary.txt"
-    summarize_transcript(input_file, output_file)
-    print(f"Summary saved to {output_file}")
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
