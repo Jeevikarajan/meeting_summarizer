@@ -1,19 +1,28 @@
-# Meeting_summarizer
+# Meeting Summarizer
 
-Overview
-The Meeting Summarizer is a Python-based tool that:
-Converts speech to text from an audio file using Whisper AI.
-Detects the language of the transcript.
-Translates non-English transcripts to English using MBart.
-Summarizes the meeting using BART (Facebook's bart-large-cnn model).
-Extracts and assigns action items/tasks from the meeting.
-Saves the results to a text file.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Output
-The script will:
-Transcribe the meeting audio.
-Detect the language of the transcript.
-Translate it to English if necessary.
-Summarize the key points.
-Extract and assign tasks to participants.
-Save results in meeting_summary.txt.
+The *Meeting Summarizer* is a Python-based tool designed to automatically summarize meeting transcripts. It extracts key points, action items, and generates concise summaries, making it easier to review and follow up on meetings.
+
+---
+
+## Features
+- *Automatic Summarization*: Generates concise summaries from meeting transcripts.
+- *Key Point Extraction*: Identifies and highlights the most important points discussed.
+- *Action Item Detection*: Extracts actionable tasks assigned during the meeting.
+- *Text File Output*: Saves summaries to a text file for easy sharing and reference.
+- *Customizable*: Easily extendable to include advanced NLP techniques.
+
+---
+
+## Installation
+
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package manager)
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Jeevikarajan/meeting-summarizer.git
