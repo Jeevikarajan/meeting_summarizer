@@ -3,7 +3,7 @@
 ### Example main.py File
 Here’s a simple Python script to generate summaries:
 ```python
-# main.py
+# meeting_summary.py
 import re
 
 def summarize_transcript(input_file, output_file):
@@ -25,6 +25,6 @@ def summarize_transcript(input_file, output_file):
 
 if _name_ == "_main_":
     input_file = "meeting_transcript.txt"
-    output_file = "summary_output.txt"
+    output_file = "meeting_summary.txt"
     summarize_transcript(input_file, output_file)
     print(f"Summary saved to {output_file}")
